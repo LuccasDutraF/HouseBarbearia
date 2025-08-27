@@ -1,0 +1,716 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Mohave:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #151515;
+  color: #f5f5f5;
+  line-height: 1.6;
+  font-family: "Belleza";
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Cabeçalho */
+header {
+    background: #121212;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo{
+    width: 110px;
+}
+
+header h1 {
+  padding-left: 12px;  
+  font-size: 2rem;
+  font-family: "Belleza";
+  font-weight: 100;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+nav{
+    margin-right: 170px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 23px;
+}
+
+nav a:hover {
+  color: #bbb;
+}
+
+.menu-link{
+    position: relative;
+}
+
+.menu-link--active::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 10px;
+    background-color: #949494;
+    top: -40px;
+    left: 8px;
+}
+
+
+
+/* Hero */
+.hero {
+  background: url(wallpaperhero3.png) no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-img{
+    position: absolute;
+    width: 99vw;
+    margin-top: 165px;
+}
+
+.esquerda{
+    width: 50%;
+    z-index: 2;
+}
+
+.esquerda-container{
+    width: 40%;
+    top: 36%;
+    position: absolute;
+    left: 8%;
+}
+
+.esquerda h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.esquerda p{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.direita{
+    width: 50%;
+
+}
+
+.direita-container{
+    z-index: 2;
+    position: absolute;
+    right: 5%;
+    bottom: 25%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ccc;
+}
+
+.section-about{
+    display: flex;
+    width: 100%;
+    position: relative;
+    background-color: #121212;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    height: 500px;
+}
+
+.section-about h2{
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.about-container{
+    margin-bottom: 2%;
+}
+
+.about span{
+    font-size: 40px;
+    font-weight: bold;
+    opacity: .1;
+    position: absolute;
+    left: 44%;
+    top: 28%;
+    text-transform: uppercase;
+}
+
+.descricao{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 3%;
+
+}
+
+.descricao p{
+    width: 60%;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.hero-wallpaper2{
+    background: url(herowallpaper3.jpg) no-repeat center center/cover;
+
+}
+
+.horarios-funcionamento{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.horarios-funcionamento h3{
+    font-size: 25px;
+}
+
+.horarios-container{
+}
+
+.horarios{
+    padding-top: 15px;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    display: grid;
+}
+
+.horarios .p{
+    font-size: 21px;
+    padding: 20px;
+}
+
+.horarios span{
+    font-weight: bold;
+}
+
+.hero-wallpaper3{
+    width: 100vw;
+    position: absolute;
+}
+
+.localiza-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.redes a{
+    text-decoration: none;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 8%;
+}
+
+.telefone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.localiza-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.localizacao{
+    width: 32%;
+}
+
+.enunciado-localiza{
+    text-align: center;
+}
+
+/* Seções */
+.cortes {
+ padding: 50px 20px 60px 20px;
+  text-align: center;
+}
+
+.titulo h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.titulo span{
+  position: absolute;
+  opacity: .1;
+  bottom: 62%;
+  left: 41%;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.titulo p{
+  width: 50%;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Galeria */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.galeria img {
+  width: 530px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Cards */
+
+.feedback{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.feedback h2{
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.feedback span{
+    position: absolute;
+    opacity: .1;
+    font-weight: 600;
+    bottom: 87%;
+    left: 35%;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.barbeiros{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  position: relative;
+}
+
+.barbeiros span{
+  position: absolute;
+  opacity: .1;
+  text-transform: uppercase;
+  font-weight: 600;
+  left: 31%;
+  font-size: 36px;
+  bottom: 66%;
+  letter-spacing: 2px;
+}
+
+.barbeiros h2{
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.barbeiros .p{
+  text-align: center;
+  width: 62%;
+  letter-spacing: 2px;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 6%;
+  padding-bottom: 3%;
+}
+
+.card {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.enunciado .instagram{
+  margin-top: 2px;
+}
+
+.enunciado a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.rede{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.enunciado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Rodapé */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 376px){
+
+/*Menu-mobile
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 175px;
+    margin-left: 15px;
+}
+
+nav {
+    position: absolute;
+    background-color: #151515;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    }
+
+.menu-link {
+    position: relative;
+    font-size: 20px;
+}
+
+.menu-link--active::before {
+    display: none;
+}
+*/
+
+header{
+    position: static;
+}
+
+header .logo {
+  width: 65px;
+}
+
+header h1 {
+    padding-left: 8px;
+    font-size: 17px;
+    font-family: "Belleza";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+.menu-link {
+    position: relative;
+    font-size: 20px;
+}
+
+.menu-link--active::before {
+    display: none;
+}
+
+.menu-mobile{
+
+   position: absolute;
+    background-color: #151515;
+    height: calc(100vh - 12px);
+    top: 0;
+    right: 0;
+    width: 60%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    transform: translateX(230px);
+    transition: 0.2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 175px;
+    margin-left: 15px;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 13px;
+}
+
+.hero{
+  height: 560px;
+}
+
+.esquerda-container {
+    width: 70%;
+    top: 35%;
+    position: absolute;
+    left: 8%;
+}
+
+.esquerda h2 {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.esquerda p {
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.direita-container {
+      z-index: 2;
+      position: absolute;
+      right: 20px;
+      bottom: 8%;
+    }
+
+.about-container {
+    margin-bottom: 2%;
+}
+
+.section-about{
+  height: 350px;
+}
+
+.about span {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: .1;
+    position: absolute;
+    left: 27%;
+    top: 22%;
+    text-transform: uppercase;
+}
+
+.section-about h2 {
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 3%;
+}
+
+.descricao p {
+    width: 60%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.horarios-funcionamento{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.horarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.horarios .p {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.localiza-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enunciado-localiza h2{
+  display: none;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    font-size: 12px;
+    align-items: center;
+    margin-left: 0;
+    padding-bottom: 15px;
+}
+
+.tel-mail{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.icons{
+  width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: end;
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.localizacao {
+    width: 100%;
+}
+
+.localiza-container {
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 10px 10px 13px 10px;
+    margin-top: 5px;
+}
+}
+
+
+
