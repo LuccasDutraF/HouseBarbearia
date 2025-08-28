@@ -15,6 +15,7 @@ const barbeiroimg2 = document.querySelector('.barbeiroimg2')
 const corte1 = document.querySelector('.corte1')
 const corte2 = document.querySelector('.corte2')
 const corte3 = document.querySelector('.corte3')
+const nav = document.querySelector('.nav-ul')
 
 function mostrarmenumobile() {
     menumobile.style.transform = 'translateX(0)'
@@ -54,8 +55,9 @@ function mostrarmenumobilebarbeiros() {
 }
 
 function tirarmenumobile() {
+    if (window.innerWidth <= 560) {
     menumobile.style.transform = 'translateX(500px)'
-    menumobile.style.display = 'none'
+    menumobile.style.display = 'flex'
     about.style.display = 'flex'
     hero2.style.display = 'block'
     localizaredes.style.display = 'block'
@@ -65,9 +67,12 @@ function tirarmenumobile() {
     cortes.style.display = 'flex'
     feedback.style.display = 'flex'
 }
+    
+}
 
 function tirarmenumobilecortes() {
-    menumobile.style.transform = 'translateX(500px)'
+    if (window.innerWidth <= 560){
+       menumobile.style.transform = 'translateX(500px)'
     menumobile.style.display = 'none'
     footer.style.display = 'block'
     body.style.height = '100%'
@@ -76,10 +81,12 @@ function tirarmenumobilecortes() {
     corte1.style.display = 'block'
     corte2.style.display = 'block'
     corte3.style.display = 'block'
-    cortes.style.padding = '50px 20px 60px 20px'
+    cortes.style.padding = '50px 20px 60px 20px' 
+    }
 }
 
 function tirarmenumobilebarbeiros() {
+    if (window.innerWidth <= 560){
     menumobile.style.transform = 'translateX(500px)'
     menumobile.style.display = 'none'
     barbeiros.style.display = 'block'
@@ -89,4 +96,6 @@ function tirarmenumobilebarbeiros() {
     barbeiroimg2.style.width = '100%'
     footer.style.display = 'block'
     body.style.height = '100%'
+    }
+
 }
