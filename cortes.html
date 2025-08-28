@@ -7,13 +7,14 @@
   <title>Barbearia House - Cortes</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="body">
   <header>
-    <div class="title-header">
+    <div class="title-header" onclick="tirarmenumobile()">
     <img src="Logo.png" class="logo" alt="">
     <h1>House Barbearia</h1>
     </div>
-    <nav>
+    <button onclick="mostrarmenumobile()">Menu</button>
+    <nav class="menu-mobile">
       <ul>
         <li><a href="index.html" class="menu-link">Home</a></li>
         <li><a href="cortes.html" class="menu-link  menu-link--active">Cortes</a></li>
@@ -23,7 +24,7 @@
   </header>
 
 
-  <section class="cortes">
+  <section class="cortes" onclick="tirarmenumobile()">
 
     <div class="titulo">
     <span>Nossos Cortes</span>
@@ -40,7 +41,7 @@
   </section>
 
   <!-- Depoimentos -->
-  <section class="feedback">
+  <section class="feedback" onclick="tirarmenumobile()">
     <span>O que dizem nossos clientes</span>
     <h2>O que dizem nossos clientes</h2>
     <div class="cards">
@@ -66,5 +67,7 @@
   <footer>
     <p>&copy; 2025 Barbearia House - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -41,6 +41,10 @@ header .logo{
     width: 110px;
 }
 
+header button{
+  display: none;
+}
+
 header h1 {
   padding-left: 12px;  
   font-size: 2rem;
@@ -100,6 +104,7 @@ nav a:hover {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    position: relative;
 }
 
 .hero-img{
@@ -363,6 +368,7 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     position: relative;
+    text-align: center;
 }
 
 .feedback h2{
@@ -381,7 +387,7 @@ nav a:hover {
     letter-spacing: 2px;
 }
 
-.barbeiros{
+.barbeiro-titulo{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -390,7 +396,7 @@ nav a:hover {
   position: relative;
 }
 
-.barbeiros span{
+.barbeiro-titulo span{
   position: absolute;
   opacity: .1;
   text-transform: uppercase;
@@ -401,13 +407,13 @@ nav a:hover {
   letter-spacing: 2px;
 }
 
-.barbeiros h2{
+.barbeiro-titulo h2{
   font-size: 35px;
   font-weight: 400;
   letter-spacing: 2px;
 }
 
-.barbeiros .p{
+.barbeiro-titulo .p{
   text-align: center;
   width: 62%;
   letter-spacing: 2px;
@@ -477,31 +483,128 @@ footer a {
   text-decoration: underline;
 }
 
-
-@media (max-width: 376px){
-
-/*Menu-mobile
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-    flex-direction: column;
-    margin-bottom: 175px;
-    margin-left: 15px;
+@media (max-width: 1367px){
+  .esquerda-container {
+    width: 40%;
+    top: 18%;
+    position: absolute;
+    left: 8%;
 }
 
-nav {
-    position: absolute;
-    background-color: #151515;
-    height: 100vh;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    z-index: 9;
+.esquerda p {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.hero-wallpaper2 {
+    background: url(herowallpaper3.jpg) no-repeat center center / cover;
+    height: 320px;
     display: flex;
     align-items: center;
+}
+
+/*cuts mobile*/
+
+nav{
+  margin-right: 50px;
+}
+
+.titulo p {
+    width: 40%;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+}
+
+@media (max-width: 1024px){
+
+  /*Home Configs*/
+  header button{
+    display: none;
+}
+
+  nav {
+    margin-right: 30px;
+}
+
+  .esquerda-container {
+    width: 38%;
+    top: 22%;
+    position: absolute;
+    left: 8%;
+}
+
+.esquerda h2 {
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.esquerda p {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+.section-about{
+  height: 370px;
+}
+
+.about span{
+  left: 40%;
+  top: 22%;
+}
+
+.hero-wallpaper2{
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+/*Cuts mobile*/
+
+.galeria img{
+  width: 400px;
+}
+
+.card{
+  width: 228px;
+  gap: 20px;
+}
+
+}
+
+@media (max-width: 768px){
+
+  header{
+    position: static;
+}
+
+header .logo {
+  width: 76px;
+}
+
+header h1 {
+    padding-left: 8px;
+    font-size: 20px;
+    font-family: "Belleza";
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 3px;
+}
+
+header button{
+  display: none;
+}
+
+ nav {
+    margin-right: 30px;
+}
+
+    nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
     }
 
 .menu-link {
@@ -509,11 +612,192 @@ nav {
     font-size: 20px;
 }
 
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 13px;
+}
+
+.hero{
+  height: 560px;
+}
+
+.esquerda-container {
+    width: 57%;
+    top: 35%;
+    position: absolute;
+    left: 8%;
+}
+
+.esquerda h2 {
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.esquerda p {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.direita-container {
+      z-index: 2;
+      position: absolute;
+      right: 60px;
+      bottom: 16%;
+    }
+
+.about-container {
+    margin-bottom: 2%;
+}
+
+.section-about{
+  height: 350px;
+}
+
+.about span {
+    font-size: 40px;
+    font-weight: bold;
+    opacity: .1;
+    position: absolute;
+    left: 34%;
+    top: 24%;
+    text-transform: uppercase;
+}
+
+.section-about h2 {
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+.descricao {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-top: 3%;
+}
+
+.descricao p {
+    width: 60%;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.horarios-funcionamento{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.horarios{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.horarios .p {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.localiza-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enunciado-localiza h2{
+  display: none;
+}
+
+.redes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    font-size: 12px;
+    align-items: center;
+    margin-left: 0;
+    padding-bottom: 15px;
+}
+
+.tel-mail{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.icons{
+  width: 45%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: end;
+    margin-right: 8px;
+    margin-top: 0;
+}
+
+.localizacao {
+    width: 100%;
+}
+
+.localiza-container {
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 10px 10px 13px 10px;
+    margin-top: 5px;
+}
+
+.titulo h2{
+  font-size: 40px;
+}
+
+.titulo p{
+  width: 50%;
+}
+
+.galeria img{
+  width: 300px;
+}
+
+}
+
+
+@media (max-width: 560px){
+  header button{
+   display: inline;
+}
+
+  .menu-mobile{
+
+   position: absolute;
+    background-color: #151515;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 60%;
+    z-index: 9;
+    display: none;
+    align-items: center;
+    margin-right: 0;
+}
+
 .menu-link--active::before {
     display: none;
 }
-*/
 
+}
+
+@media (max-width: 376px){
 header{
     position: static;
 }
@@ -549,11 +833,8 @@ header h1 {
     right: 0;
     width: 60%;
     z-index: 9;
-    display: flex;
     align-items: center;
     margin-right: 0;
-    transform: translateX(230px);
-    transition: 0.2s ease-in-out;
 }
 
 nav ul {
@@ -710,7 +991,36 @@ footer {
     padding: 10px 10px 13px 10px;
     margin-top: 5px;
 }
+
+.titulo h2{
+  font-size: 35px;
 }
 
+.titulo p{
+  width: 80%;
+  font-size: 15px;
+}
 
+.cards{
+  gap: 8px;
+}
+
+.card{
+  width: 170px;
+}
+
+.barbeiros span{
+  font-size: 25px;
+}
+
+.barbeiro-titulo h2{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.barbeiro-titulo p{
+  width: 65px;
+}
+
+}
 
