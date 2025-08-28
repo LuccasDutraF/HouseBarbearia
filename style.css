@@ -82,7 +82,7 @@ nav a:hover {
     position: relative;
     background-color: #15151500;
     z-index: 9;
-    display: none;
+    display: flex;
     transform: translateX(0);
   }
 
