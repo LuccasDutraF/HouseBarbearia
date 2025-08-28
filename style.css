@@ -193,13 +193,13 @@ nav a:hover {
 }
 
 .sobre--active::before {
-    content: 'Sobre';
+    content: 'Sobre Nós';
     position: absolute;
     bottom: 24%;
     left: 27%;
     opacity: .2;
     letter-spacing: 4px;
-    font-size: 40px;
+    font-size: 37px;
     animation: fadeleftbefore 1.1s forwards;
 }
 
@@ -245,6 +245,8 @@ nav a:hover {
 .horarios .p {
   font-size: 21px;
   padding: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .horarios span {
@@ -354,11 +356,12 @@ nav a:hover {
 .oque-dizem--active::before {
     content: 'O que dizem nossos clientes';
     position: absolute;
-    bottom: 79%;
-    right: 3%;
+    bottom: 87%;
+    right: 13%;
     opacity: .2;
     letter-spacing: 3px;
     font-size: 30px;
+    width: 80%;
 }
 
 
