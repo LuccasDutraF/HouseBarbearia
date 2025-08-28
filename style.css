@@ -795,6 +795,23 @@ footer {
     display: none;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 175px;
+    margin-left: 15px;
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 13px;
+}
+
 }
 
 @media (max-width: 376px){
@@ -822,36 +839,6 @@ header h1 {
 
 .menu-link--active::before {
     display: none;
-}
-
-.menu-mobile{
-
-   position: absolute;
-    background-color: #151515;
-    height: calc(100vh - 12px);
-    top: 0;
-    right: 0;
-    width: 60%;
-    z-index: 9;
-    align-items: center;
-    margin-right: 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: start;
-    gap: 20px;
-    flex-direction: column;
-    margin-bottom: 175px;
-    margin-left: 15px;
-}
-
-nav a {
-    color: #f5f5f5;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 13px;
 }
 
 .hero{
