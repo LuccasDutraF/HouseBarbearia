@@ -10,7 +10,7 @@ const feedback = document.querySelector('.feedback')
 const barbeiros = document.querySelector('.barbeiros')
 const barbeirosremovido1 = document.getElementById('barbeiroremovido1')
 const barbeirosremovido2 = document.getElementById('barbeiroremovido2')
-const barbeiroimg = document.querySelector('.barbeiroimg')
+const barbeirosremovido3 = document.getElementById('barbeiroremovido3')
 const barbeiroimg2 = document.querySelector('.barbeiroimg2')
 const corte1 = document.querySelector('.corte1')
 const corte2 = document.querySelector('.corte2')
@@ -48,8 +48,8 @@ function mostrarmenumobilebarbeiros(){
     menumobile.style.display = 'flex'
     barbeirosremovido1.style.display = 'none'
     barbeirosremovido2.style.display = 'none'
+    barbeirosremovido3.style.display = 'none'
     footer.style.display = 'none'
-    barbeiroimg.style.width = '90%'
     barbeiroimg2.style.width = '90%'
 }
 
@@ -85,7 +85,7 @@ function tirarmenumobilebarbeiros(){
     barbeiros.style.display = 'block'
     barbeirosremovido1.style.display = 'block'
     barbeirosremovido2.style.display = 'block'
-    barbeiroimg.style.width = '100%'
+    barbeirosremovido3.style.display = 'block'
     barbeiroimg2.style.width = '100%'
     footer.style.display = 'block'
     body.style.height = '100%'
