@@ -150,15 +150,15 @@ nav a:hover {
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #fff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #313131db;
+    color: #efefef;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    letter-spacing: 1px;
 }
 
 .btn:hover {
@@ -323,22 +323,25 @@ nav a:hover {
   font-size: 35px;
   font-weight: 400;
   letter-spacing: 2px;
+  animation: fadeRight 1.1s forwards;
 }
 
 .nossos-cortes--active::before {
     content: 'Nossos Cortes';
     position: absolute;
-    bottom: 68%;
-    left: 12%;
+    bottom: 32%;
+    right: 5%;
     opacity: .2;
     letter-spacing: 4px;
     font-size: 33px;
+    animation: fadeleftbefore 1.1s forwards;
 }
 
 .titulo p {
   width: 50%;
   font-size: 19px;
   letter-spacing: 2px;
+  animation: fadebottom 2s forwards;
 }
 
 .titulo {
@@ -364,11 +367,13 @@ nav a:hover {
 .equipe--active::before {
     content: 'Nossa Equipe';
     position: absolute;
-    bottom: 69%;
-    left: 21%;
+    bottom: 24%;
+    right: 3%;
     opacity: .2;
     letter-spacing: 3px;
-    font-size: 33px;
+    font-size: 32px;
+    animation: fadeleftbefore 1.1s forwards;
+    width: 100%;
 }
 
 .galeria {
@@ -419,12 +424,14 @@ nav a:hover {
   font-size: 35px;
   font-weight: 400;
   letter-spacing: 2px;
+  animation:fadeRight 1.1s forwards;
 }
 
 .barbeiro-titulo .p {
   text-align: center;
   width: 62%;
   letter-spacing: 2px;
+  animation:fadebottom 2s forwards;
 }
 
 
