@@ -57,7 +57,7 @@ function mostrarmenumobilebarbeiros() {
 function tirarmenumobile() {
     if (window.innerWidth <= 560) {
     menumobile.style.transform = 'translateX(500px)'
-    menumobile.style.display = 'flex'
+    menumobile.style.display = 'none'
     about.style.display = 'flex'
     hero2.style.display = 'block'
     localizaredes.style.display = 'block'
