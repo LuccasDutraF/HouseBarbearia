@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,19 @@
   <title>Barbearia House - Cortes</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="body">
   <header>
     <div class="title-header" onclick="tirarmenumobile()">
-    <img src="Logo.png" class="logo" alt="">
-    <h1>House Barbearia</h1>
+      <img src="Logo.png" class="logo" alt="">
+      <h1>House Barbearia</h1>
     </div>
     <button onclick="mostrarmenumobilecortes()">Menu</button>
     <nav class="menu-mobile">
       <ul>
         <li><a href="index.html" class="menu-link">Home</a></li>
-        <li><a href="cortes.html" class="menu-link  menu-link--active">Cortes</a></li>
+        <li class="menu-lateral menu-lateral--active"><a href="cortes.html"
+            class="menu-link  menu-link--active">Cortes</a></li>
         <li><a href="barbeiros.html" class="menu-link">Barbeiros</a></li>
       </ul>
     </nav>
@@ -27,11 +30,11 @@
   <section class="cortes" onclick="tirarmenumobilecortes()">
 
     <div class="titulo">
-    <span>Nossos Cortes</span>
-    <h2>Nossos Cortes</h2>
-    <p>Trabalhamos com cortes modernos e tradicionais, confira alguns resultados abaixo:</p>
+      <span>Nossos Cortes</span>
+      <h2>Nossos Cortes</h2>
+      <p>Trabalhamos com cortes modernos e tradicionais, confira alguns resultados abaixo:</p>
     </div>
-    
+
     <div class="galeria" onclick="tirarmenumobilecortes()">
       <img src="corte1.jpg" alt="Corte 1">
       <img src="corte2.jpg" class="corte1" alt="Corte 2">
@@ -70,4 +73,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

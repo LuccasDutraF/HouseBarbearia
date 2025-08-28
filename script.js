@@ -14,9 +14,9 @@ const barbeirosremovido3 = document.getElementById('barbeiroremovido3')
 const barbeiroimg2 = document.querySelector('.barbeiroimg2')
 const corte1 = document.querySelector('.corte1')
 const corte2 = document.querySelector('.corte2')
-const corte3 = document.querySelector('.corte3')   
+const corte3 = document.querySelector('.corte3')
 
-function mostrarmenumobile(){
+function mostrarmenumobile() {
     menumobile.style.transform = 'translateX(0)'
     menumobile.style.display = 'flex'
     about.style.display = 'none'
@@ -25,14 +25,14 @@ function mostrarmenumobile(){
     localizacao.style.display = 'none'
     footer.style.display = 'none'
     body.style.height = '100vh'
-    
 
-    if(window.innerWidth >= 768){
+
+    if (window.innerWidth >= 768) {
         about.style.display = 'flex'
     }
 }
 
-function mostrarmenumobilecortes(){
+function mostrarmenumobilecortes() {
     menumobile.style.transform = 'translateX(0)'
     menumobile.style.display = 'flex'
     feedback.style.display = 'none'
@@ -43,7 +43,7 @@ function mostrarmenumobilecortes(){
     cortes.style.padding = '50px 20px 0px 20px'
 }
 
-function mostrarmenumobilebarbeiros(){
+function mostrarmenumobilebarbeiros() {
     menumobile.style.transform = 'translateX(0)'
     menumobile.style.display = 'flex'
     barbeirosremovido1.style.display = 'none'
@@ -53,7 +53,7 @@ function mostrarmenumobilebarbeiros(){
     barbeiroimg2.style.width = '90%'
 }
 
-function tirarmenumobile(){
+function tirarmenumobile() {
     menumobile.style.transform = 'translateX(500px)'
     menumobile.style.display = 'none'
     about.style.display = 'flex'
@@ -66,7 +66,7 @@ function tirarmenumobile(){
     feedback.style.display = 'flex'
 }
 
-function tirarmenumobilecortes(){
+function tirarmenumobilecortes() {
     menumobile.style.transform = 'translateX(500px)'
     menumobile.style.display = 'none'
     footer.style.display = 'block'
@@ -79,7 +79,7 @@ function tirarmenumobilecortes(){
     cortes.style.padding = '50px 20px 60px 20px'
 }
 
-function tirarmenumobilebarbeiros(){
+function tirarmenumobilebarbeiros() {
     menumobile.style.transform = 'translateX(500px)'
     menumobile.style.display = 'none'
     barbeiros.style.display = 'block'
