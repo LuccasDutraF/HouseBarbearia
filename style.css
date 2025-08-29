@@ -3,11 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:"Belleza";
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Mohave:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 html{
   overflow-x: hidden;
@@ -17,11 +13,11 @@ body {
   background: #151515;
   color: #f5f5f5;
   line-height: 1.6;
-  font-family: "Belleza";
   font-weight: 100;
   font-style: normal;
   width: 100%;
   overflow-x: hidden;
+  font-family: "Lora", serif;
 }
 
 /* Cabeçalho */
@@ -55,7 +51,6 @@ header button {
 header h1 {
   padding-left: 12px;
   font-size: 2rem;
-  font-family: "Belleza";
   font-weight: 100;
   font-style: normal;
   letter-spacing: 3px;
@@ -638,7 +633,6 @@ footer a {
   header h1 {
     padding-left: 8px;
     font-size: 20px;
-    font-family: "Belleza";
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
@@ -829,10 +823,6 @@ footer a {
 
 @media (max-width: 560px) {
 
-  *{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-
   header button {
     display: inline;
     background: none;
@@ -980,7 +970,6 @@ footer a {
   header h1 {
     padding-left: 8px;
     font-size: 17px;
-    font-family: "Belleza";
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
