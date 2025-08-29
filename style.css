@@ -642,6 +642,7 @@ footer a {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
+    color: red;
   }
 
   header button {
@@ -841,6 +842,10 @@ footer a {
     letter-spacing: 2px;
   }
 
+  header h1{
+    color: blue;
+  }
+
   .menu-mobile {
 
     position: absolute;
@@ -980,6 +985,7 @@ footer a {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
+    color: green;
   }
 
 
