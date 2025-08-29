@@ -64,7 +64,7 @@ function tirarmenumobile() {
     localizacao.style.display = 'block'
     footer.style.display = 'block'
     body.style.height = '100%'
-    body.style.width = '100vw'
+    body.style.width = '100%'
     cortes.style.display = 'flex'
     feedback.style.display = 'flex'
 }
