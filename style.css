@@ -642,7 +642,6 @@ footer a {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
-    color: red;
   }
 
   header button {
@@ -829,6 +828,11 @@ footer a {
 
 
 @media (max-width: 560px) {
+
+  *{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
   header button {
     display: inline;
     background: none;
@@ -838,12 +842,7 @@ footer a {
     padding: 8px;
     border-color: #4b4b4b33;
     border-style: solid;
-    font-family: "Belleza";
     letter-spacing: 2px;
-  }
-
-  header h1{
-    color: blue;
   }
 
   .menu-mobile {
@@ -985,7 +984,6 @@ footer a {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 3px;
-    color: green;
   }
 
 
